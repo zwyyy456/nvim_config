@@ -6,3 +6,9 @@ debug
 foo.*
 *.log
 data
+<<<<<<< HEAD
+=======
+
+# .DS_Store
+**/.DS_Store
+>>>>>>> ce234c1d21cf163074337929aa2a06dda6897374
