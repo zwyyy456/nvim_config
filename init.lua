@@ -5,6 +5,7 @@ if vim.g.vscode then
   require("vscode.config.keymaps")
   -- require("vscode.init")
   require("vscode.config.lazy")
+  require("vscode.plugins.mini")
   -- require("vscode.plugins.disabled")
 else
   -- bootstrap lazy.nvim, LazyVim and your plugins
