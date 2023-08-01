@@ -1,20 +1,20 @@
-  -- comments
-  return {
+-- comments
+return {
   { "JoosepAlviste/nvim-ts-context-commentstring", lazy = true },
-  {
-    "echasnovski/mini.comment",
-    event = "VeryLazy",
-    opts = {
-      hooks = {
-        pre = function()
-          require("ts_context_commentstring.internal").update_commentstring({})
-        end,
-      },
-    },
-    config = function(_, opts)
-      require("mini.comment").setup(opts)
-    end,
-  },
+  -- {
+  --   "echasnovski/mini.comment",
+  --   event = "VeryLazy",
+  --   opts = {
+  --     hooks = {
+  --       pre = function()
+  --         require("ts_context_commentstring.internal").update_commentstring({})
+  --       end,
+  --     },
+  --   },
+  --   config = function(_, opts)
+  --     require("mini.comment").setup(opts)
+  --   end,
+  -- },
   {
     "nvim-treesitter/nvim-treesitter",
     version = false, -- last release is way too old and doesn't work on Windows
@@ -26,7 +26,7 @@
     },
     ---@type TSConfig
     opts = {
-      highlight = { enable = false},
+      highlight = { enable = false },
       indent = { enable = false, disable = { "python" } },
       context_commentstring = { enable = true, enable_autocmd = false },
       ensure_installed = {
@@ -63,5 +63,4 @@
       require("nvim-treesitter.configs").setup(opts)
     end,
   },
-
 }
