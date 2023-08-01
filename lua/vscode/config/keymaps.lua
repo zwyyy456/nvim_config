@@ -4,4 +4,3 @@ local keymap = vim.keymap
 keymap.set("v", "gc", "<Plug>VSCodeCommentary")
 keymap.set("n", "gc", "<Plug>VSCodeCommentary")
 keymap.set("o", "gc", "<Plug>VSCodeCommentary")
-keymap.set("n", "gcc", "<Plug>VSCodeCommentaryLine")
