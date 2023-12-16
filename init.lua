@@ -8,5 +8,5 @@ if vim.g.vscode then
 else
   -- bootstrap lazy.nvim, LazyVim and your plugins
   require("config.lazy")
-  require("config.osc52")
+  -- require("config.osc52")
 end
