@@ -6,4 +6,4 @@ local opt = vim.opt
 opt.tabstop = 4
 opt.shiftwidth = 4
 opt.fileformat = "unix"
-opt.spell = false
+opt.spelllang = { "en", "cjk" }
