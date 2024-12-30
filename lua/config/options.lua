@@ -31,3 +31,4 @@ if vim.env.SSH_TTY then
     },
   }
 end
+opt.spelllang = { "en", "cjk" }
